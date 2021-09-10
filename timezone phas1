@@ -1,0 +1,21 @@
+## A new android library (timezone)
+
+♦ BriefAboutTheLibrary
+  This library provides the IANA time zone database and time zone aware DateTime class,
+  TZDateTime.
+  
+  We provide three different APIs to load a database: one which is embedded into a library, one for browsers, and one for standalone environments.
+  
+♦ Database variants
+
+  We offer three different variants of the IANA database:
+  
+  default: doesn't contain deprecated and historical zones with some exceptions like "US/Eastern" and "Etc/UTC"; this is about 75% the size of the all database.
+  
+  all: contains all data from the IANA time zone database.
+  
+  10y: default database truncated to contain historical data from 5 years ago until 5 years in the future; this database is about 25% the size of the default database.
+  
+♦ KeyFeatures
+
+  Each location in the database represents a national region where all clocks keeping local time have agreed since 1970. Locations are identified by continent or ocean and then by the name of the location, which is typically the largest city within the region.
